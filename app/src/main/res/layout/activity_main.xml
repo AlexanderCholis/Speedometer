@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="0.0 km/h"
+        android:textSize="36sp" />
+
+
+    <Button
+        android:id="@+id/switchModeButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Switch Mode" />
+
+    <Button
+        android:id="@+id/setSpeedLimitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchModeButton"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="0dp"
+        android:text="Set Speed Limit" />
+
+    <Button
+        android:id="@+id/viewRecordsButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="14dp"
+        android:text="View Records" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setSpeedLimitButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="215dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setSpeedLimitButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="315dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Stop" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speedTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:text="Address not available"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>
